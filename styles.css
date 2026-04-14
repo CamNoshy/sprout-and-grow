@@ -1,21 +1,187 @@
-/* Basic CSS file for Sprout & Grow website */
+/* Sprout & Grow Website Styles */
 
-body, html {
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8f0e3;
+    color: #243322;
+    line-height: 1.6;
+}
+
+/* Page Margins */
+.page-wrap {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Logo */
+.logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Navigation */
+.nav-list {
+    list-style: none;
     padding: 0;
-    font-family: Arial, sans-serif;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #47693f;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    background-color: #314b2d;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f8f0;
+    border: 2px solid #9ab58b;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 10px 0;
 }
 
-main {
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    color: #314b2d;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #6b8e5d;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #47693f;
+}
+
+/* Sections */
+.intro,
+.highlights {
+    background-color: #f9fcf6;
+    border-radius: 10px;
     padding: 20px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Add specific styles for navigation, main content, images, etc. */
+h2 {
+    font-family: Georgia, serif;
+    color: #314b2d;
+}
+
+/* Floated Image */
+.float-image {
+    float: left;
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px 15px 0;
+    border-radius: 10px;
+    border: 3px solid #9ab58b;
+}
+
+/* Clear Float */
+.intro::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: #e3eddc;
+    border: 1px solid #9ab58b;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* Links */
+a {
+    color: #2c5c2f;
+}
+
+a:hover {
+    color: #1f4021;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #47693f;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+/* Accessibility Focus */
+a:focus {
+    outline: 3px solid #d7e89d;
+    outline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-wrap {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .float-image {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
