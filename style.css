@@ -1,187 +1,320 @@
-/* Sprout & Grow Website Styles */
+/* =========================================================
+   Sprout & Grow Website Stylesheet
+   Shared styles for all five pages
+   ========================================================= */
 
+/* Global box model */
 * {
     box-sizing: border-box;
 }
 
+/* Base page styles */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
     background-color: #e8f0e3;
     color: #243322;
-    line-height: 1.6;
 }
 
-/* Page Margins */
+/* Layout wrapper */
 .page-wrap {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* Header */
-header {
+/* Header styles */
+.site-header {
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
-/* Logo */
+.logo-link {
+    display: inline-block;
+}
+
 .logo {
     width: 100%;
     max-width: 500px;
     height: auto;
+    display: block;
 }
 
-/* Navigation */
+/* Navigation styles */
 .nav-list {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin: 1rem 0 0 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.75rem;
+}
+
+.nav-list li {
+    margin: 0;
 }
 
 .nav-list a {
+    display: inline-block;
     text-decoration: none;
-    color: #ffffff;
     background-color: #47693f;
-    padding: 10px 18px;
-    border-radius: 5px;
+    color: #ffffff;
+    padding: 0.7rem 1.1rem;
+    border-radius: 0.35rem;
     font-weight: bold;
 }
 
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a:focus {
     background-color: #314b2d;
 }
 
-/* Hero Section */
-.hero {
+/* Hero and banners */
+.hero,
+.page-banner {
     background-color: #f4f8f0;
     border: 2px solid #9ab58b;
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 20px;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
-.hero h1 {
-    font-family: Georgia, serif;
+.hero h1,
+.page-banner h1 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 2.5rem;
     color: #314b2d;
 }
 
-.hero p {
+.hero p,
+.page-banner p {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
+/* Buttons */
 .button {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 1rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 0.35rem;
     background-color: #6b8e5d;
     color: #ffffff;
-    padding: 12px 20px;
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #47693f;
 }
 
-/* Sections */
-.intro,
-.highlights {
+/* General content sections */
+.content-section,
+.card-section,
+.form-section {
     background-color: #f9fcf6;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
-h2 {
-    font-family: Georgia, serif;
+.content-section h2,
+.card-section h2,
+.form-section h2 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
     color: #314b2d;
 }
 
-/* Floated Image */
+/* Float image section */
 .float-image {
     float: left;
     width: 40%;
     max-width: 400px;
     height: auto;
-    margin: 0 20px 15px 0;
-    border-radius: 10px;
+    margin: 0 1.25rem 1rem 0;
+    border-radius: 0.6rem;
     border: 3px solid #9ab58b;
 }
 
-/* Clear Float */
-.intro::after {
+.content-section::after,
+.form-section::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Cards */
+/* Card layout */
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .card {
     flex: 1 1 250px;
     background-color: #e3eddc;
     border: 1px solid #9ab58b;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 0.6rem;
+    padding: 1rem;
 }
 
-/* Links */
+.card h3 {
+    margin-top: 0;
+    color: #314b2d;
+}
+
+/* Product cards */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card {
+    flex: 1 1 250px;
+    background-color: #e3eddc;
+    border: 1px solid #9ab58b;
+    border-radius: 0.6rem;
+    padding: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: #314b2d;
+}
+
+/* Lists */
+.feature-list {
+    padding-left: 1.5rem;
+}
+
+/* Form styles */
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.35rem;
+    border: 1px solid #9ab58b;
+    border-radius: 0.35rem;
+    font: inherit;
+    background-color: #ffffff;
+    color: #243322;
+}
+
+fieldset {
+    margin-top: 1rem;
+    border: 1px solid #9ab58b;
+    border-radius: 0.35rem;
+    padding: 0.75rem 1rem 1rem 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #314b2d;
+    padding: 0 0.35rem;
+}
+
+.inline-label {
+    display: block;
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+}
+
+/* Link styles */
 a {
     color: #2c5c2f;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #1f4021;
 }
 
-/* Footer */
+/* Footer styles */
 footer {
     text-align: center;
     background-color: #47693f;
     color: #ffffff;
-    padding: 15px;
-    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+.social-links {
+    margin-top: 0.5rem;
 }
 
 .social-links img {
     width: 24px;
     height: 24px;
-    margin: 5px;
+    margin: 0.2rem;
 }
 
-/* Accessibility Focus */
-a:focus {
+/* Focus styling for accessibility */
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
     outline: 3px solid #d7e89d;
     outline-offset: 3px;
 }
 
-/* Responsive Design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .page-wrap {
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 90%;
+    }
+
+    .hero h1,
+    .page-banner h1 {
+        font-size: 2rem;
     }
 
     .float-image {
         float: none;
         display: block;
         width: 100%;
-        margin: 0 auto 15px;
+        max-width: 100%;
+        margin: 0 auto 1rem auto;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
