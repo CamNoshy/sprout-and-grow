@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Contact page head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprout & Grow | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="page-wrap">
+
+        <!-- Header -->
+        <header class="site-header">
+            <a href="index.html">
+                <img src="sprout-grow-horizontal-524-transparent.jpg" alt="Sprout and Grow logo" class="logo">
+            </a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- Banner -->
+            <section class="page-banner">
+                <h1>Contact Us</h1>
+                <p>We’re here to help with your gardening questions, plant selections, and event inquiries.</p>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="content-section">
+                <h2>Get in Touch</h2>
+
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=80"
+                     alt="Gardening tools and plants"
+                     class="float-image">
+
+                <p>
+                    Have a question about our plants, upcoming events, or gardening tips? Reach out and we’ll be happy to help.
+                    Our team is dedicated to making gardening approachable and enjoyable for everyone.
+                </p>
+
+                <p><strong>Phone:</strong> (919) 555-1234</p>
+                <p><strong>Email:</strong> hello@sproutandgrow.com</p>
+                <p><strong>Location:</strong> Raleigh, North Carolina</p>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="form-section">
+                <h2>Send Us a Message</h2>
+
+                <form action="#" method="post">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+
+                    <input type="submit" value="Send Message" class="button submit-button">
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Sprout & Grow | Raleigh, NC</p>
+            <p><a href="mailto:hello@sproutandgrow.com">hello@sproutandgrow.com</a></p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/login/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo">
+                </a>
+
+                <a href="https://x.com/i/flow/login" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X logo">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
