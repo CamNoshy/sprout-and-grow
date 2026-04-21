@@ -1,107 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- About page head -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprout & Grow | About</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Site Wrapper -->
-    <div class="page-wrap">
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <!-- Site Header -->
-        <header class="site-header">
-            <img src="sprout-grow-horizontal-524-transparent.jpg" alt="Sprout and Grow logo" class="logo">
-            <a href="index.html" class="logo-link">
-                <img src="https://via.placeholder.com/800x200/edf5e8/2f4a2d?text=Sprout+%26+Grow" alt="Sprout and Grow logo" class="logo">
-            </a>
+/* BODY */
+body {
+    font-family: Georgia, serif;
+    background-color: #f4f7f2;
+    color: #2f4a2d;
+    line-height: 1.6;
+}
 
-            <nav aria-label="Main navigation">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+/* WRAPPER */
+.page-wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        <!-- Main Content -->
-        <main>
-            <section class="page-banner">
-                <h1>About Sprout &amp; Grow</h1>
-                <p>Organic plants, trusted guidance, and a stronger gardening community in Raleigh.</p>
-            </section>
+/* HEADER */
+.site-header {
+    text-align: center;
+    padding: 20px 0;
+}
 
-            <section class="content-section">
-                <h2>Our Story</h2>
-                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80"
-                     alt="Plants growing in a greenhouse setting"
-                     class="float-image">
-                <p>
-                    Sprout &amp; Grow was created to bring together quality organic plants, sustainable practices,
-                    and accessible gardening education. We believe gardening should feel inspiring rather than overwhelming,
-                    whether someone is growing herbs on an apartment balcony or planning a larger backyard garden.
-                </p>
-                <p>
-                    Our nursery is built around transparency, integrity, and environmental stewardship. We want every customer
-                    to leave with both healthy plants and the knowledge they need to care for them well.
-                </p>
-            </section>
+/* LOGO */
+.logo {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
 
-            <section class="card-section">
-                <h2>Our Mission</h2>
-                <div class="card-container">
-                    <article class="card">
-                        <h3>Educate</h3>
-                        <p>Provide resources, workshops, and plant care guidance that help gardeners build confidence.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Sustain</h3>
-                        <p>Encourage eco-conscious gardening choices that support healthier homes, gardens, and communities.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Connect</h3>
-                        <p>Create a welcoming place where customers can learn, share, and grow together.</p>
-                    </article>
-                </div>
-            </section>
+/* NAVIGATION */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
-            <section class="content-section">
-                <h2>The Faces Behind Sprout &amp; Grow</h2>
-                <p>
-                    Our team is made up of plant lovers, greenhouse growers, and community-minded educators who care deeply
-                    about helping customers succeed. We pride ourselves on being approachable, knowledgeable, and ready to help
-                    with plant selection, seasonal advice, and practical solutions for small or large gardening spaces.
-                </p>
+.nav-list a {
+    text-decoration: none;
+    background-color: #3f5f3c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-                <h2>What Makes Us Different</h2>
-                <ul class="feature-list">
-                    <li>High-quality organic plants selected for healthy growth</li>
-                    <li>Support for home gardeners, urban gardeners, and community groups</li>
-                    <li>Seasonal workshops and educational events</li>
-                    <li>Friendly guidance that makes gardening more approachable</li>
-                </ul>
-            </section>
-        </main>
+.nav-list a:hover {
+    background-color: #2f4a2d;
+}
 
-        <!-- Site Footer -->
-        <footer>
-            <p>&copy; 2026 Sprout &amp; Grow | Raleigh, NC</p>
-            <p><a href="mailto:hello@sproutandgrow.com">hello@sproutandgrow.com</a></p>
+/* HERO / PAGE BANNER */
+.page-banner {
+    border: 2px solid #8aa07d;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin: 25px 0;
+    background-color: #eef3ea;
+}
 
-            <div class="social-links">
-                <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo">
-                </a>
-                <a href="https://x.com/i/flow/login" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X logo">
-                </a>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+.page-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    font-size: 1.1rem;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+    background-color: #e7efe3;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+/* FLEX ROW (IMAGE + TEXT) */
+.content-row {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-row img {
+    max-width: 100%;
+    width: 350px;
+    border-radius: 10px;
+    border: 3px solid #8aa07d;
+}
+
+/* TEXT */
+.content-text {
+    flex: 1;
+}
+
+/* CARDS (PRODUCTS / FEATURES) */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 30%;
+    background-color: #dfe8d8;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #8aa07d;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    background-color: #3f5f3c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f4a2d;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+}
