@@ -1,61 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events | Sprout & Grow</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprout & Grow | Events</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="page-wrap">
+    <div class="page-wrap">
 
-<header class="site-header">
-    <a href="index.html">
-        <img src="sprout-grow-horizontal-524-transparent.jpg" class="logo">
-    </a>
+        <header class="site-header">
+            <a href="index.html">
+                <img src="sprout-grow-horizontal-524-transparent.jpg" alt="Sprout and Grow logo" class="logo">
+            </a>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<main>
+        <main>
+            <section class="page-banner">
+                <h1>Events &amp; Workshops</h1>
+                <p>Hands-on classes, seasonal workshops, and community events designed to help you grow with confidence.</p>
+            </section>
 
-<section class="page-banner">
-    <h1>Events & Workshops</h1>
-</section>
+            <section class="content-section">
+                <div class="content-row">
+                    <img src="pexels-liisbet-luup-121486327-32891325.jpg" alt="Red flowers growing in window planters">
 
-<section class="content-section">
-    <h2>Upcoming Events</h2>
-    <p>Join workshops and seasonal gardening classes.</p>
-</section>
+                    <div class="content-text">
+                        <h2>Learn, Create, and Grow</h2>
+                        <p>
+                            Our events are designed to make gardening approachable and enjoyable,
+                            no matter your experience level.
+                        </p>
+                        <p>
+                            Each class focuses on real techniques you can use at home, from container planting
+                            to seasonal plant care.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-<!-- REGISTER FORM (ON SAME PAGE) -->
-<section class="content-section">
-    <h2>Register for an Event</h2>
+            <section class="card-section">
+                <h2>Upcoming Classes</h2>
 
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
+                <div class="card-container">
+                    <article class="card">
+                        <img src="pexels-imhh-21578754.jpg" alt="Flower pots on a greenhouse table">
+                        <h3>Spring Container Garden Workshop</h3>
+                        <p>Create a beautiful container arrangement for patios, porches, and small outdoor spaces.</p>
+                    </article>
 
-        <select>
-            <option>Select Event</option>
-            <option>Planting Workshop</option>
-            <option>Garden Class</option>
-        </select>
+                    <article class="card">
+                        <img src="pexels-theshuttervision-12096576.jpg" alt="Hanging plant basket in greenhouse">
+                        <h3>Hanging Basket Design Class</h3>
+                        <p>Learn how to create full, balanced hanging baskets that can thrive through the season.</p>
+                    </article>
 
-        <button type="submit">Register</button>
-    </form>
-</section>
+                    <article class="card">
+                        <img src="pexels-handespics-31992370.jpg" alt="Succulent and cactus plants">
+                        <h3>Succulent Arrangement Workshop</h3>
+                        <p>Build a low-maintenance succulent garden and learn simple care tips for long-term success.</p>
+                    </article>
+                </div>
+            </section>
 
-</main>
-</div>
+            <section class="content-section">
+                <h2>Why Attend?</h2>
+                <ul>
+                    <li>Build confidence with hands-on gardening guidance</li>
+                    <li>Learn practical techniques you can use right away</li>
+                    <li>Take home your finished project</li>
+                    <li>Connect with local gardeners and plant lovers</li>
+                </ul>
+            </section>
+
+            <section class="form-section">
+                <h2>Register for an Event</h2>
+                <p>Complete the form below to show interest in one of our upcoming Sprout &amp; Grow events.</p>
+
+                <form action="#" method="post">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="event">Select an Event</label>
+                    <select id="event" name="event">
+                        <option value="">Choose one</option>
+                        <option value="container">Spring Container Garden Workshop</option>
+                        <option value="basket">Hanging Basket Design Class</option>
+                        <option value="succulent">Succulent Arrangement Workshop</option>
+                    </select>
+
+                    <label for="message">Questions or Comments</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+
+                    <button type="submit">Submit Registration</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Sprout &amp; Grow | Raleigh, NC</p>
+            <p><a href="mailto:hello@sproutandgrow.com">hello@sproutandgrow.com</a></p>
+        </footer>
+
+    </div>
 </body>
 </html>
