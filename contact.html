@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Sprout & Grow</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprout & Grow | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="page-wrap">
+    <div class="page-wrap">
 
-<header class="site-header">
-    <a href="index.html">
-        <img src="sprout-grow-horizontal-524-transparent.jpg" class="logo">
-    </a>
+        <header class="site-header">
+            <a href="index.html">
+                <img src="sprout-grow-horizontal-524-transparent.jpg" alt="Sprout and Grow logo" class="logo">
+            </a>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<main>
+        <main>
+            <section class="page-banner">
+                <h1>Contact Us</h1>
+                <p>We’re here to help with plants, events, and everything in between.</p>
+            </section>
 
-<section class="page-banner">
-    <h1>Contact Us</h1>
-</section>
+            <section class="content-section">
+                <div class="content-row">
+                    <img src="pexels-filirovska-7141191.jpg" alt="Rows of plants in a greenhouse">
 
-<section class="content-section">
-    <p>Phone: (919) 555-1234</p>
-    <p>Email: hello@sproutandgrow.com</p>
-</section>
+                    <div class="content-text">
+                        <h2>Get in Touch</h2>
+                        <p>
+                            Whether you need help picking the right plants, have questions about upcoming events,
+                            or want gardening advice, our team is happy to help.
+                        </p>
 
-<section class="content-section">
-    <h2>Send a Message</h2>
+                        <p><strong>Phone:</strong> (919) 555-1234</p>
+                        <p><strong>Email:</strong> hello@sproutandgrow.com</p>
+                        <p><strong>Location:</strong> Raleigh, NC</p>
+                        <p><strong>Hours:</strong> Monday - Saturday, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </section>
 
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
+            <section class="form-section">
+                <h2>Send Us a Message</h2>
 
-</main>
-</div>
+                <form action="#" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Sprout &amp; Grow | Raleigh, NC</p>
+            <p><a href="mailto:hello@sproutandgrow.com">hello@sproutandgrow.com</a></p>
+        </footer>
+
+    </div>
 </body>
 </html>
